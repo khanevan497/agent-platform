@@ -7,3 +7,9 @@ All notable changes to this project are documented here.
 **feat: NestJS API with PostgreSQL TypeORM and Redis**
 
 Monorepo with apps/api (NestJS), apps/web (React), apps/agent-engine (FastAPI). Shared docker-compose.
+
+### 2024-11-12
+
+**feat: React frontend with Vite TanStack Query and Tailwind**
+
+React 18 with Vite, TanStack Query for server state, Tailwind for styling. Zustand for auth store.
