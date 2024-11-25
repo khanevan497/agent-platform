@@ -13,3 +13,9 @@ Monorepo with apps/api (NestJS), apps/web (React), apps/agent-engine (FastAPI). 
 **feat: React frontend with Vite TanStack Query and Tailwind**
 
 React 18 with Vite, TanStack Query for server state, Tailwind for styling. Zustand for auth store.
+
+### 2024-11-25
+
+**feat: Python FastAPI agent engine scaffold**
+
+FastAPI app with /execute endpoint. Receives agent config and message, returns execution steps.
