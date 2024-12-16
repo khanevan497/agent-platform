@@ -19,3 +19,9 @@ React 18 with Vite, TanStack Query for server state, Tailwind for styling. Zusta
 **feat: Python FastAPI agent engine scaffold**
 
 FastAPI app with /execute endpoint. Receives agent config and message, returns execution steps.
+
+### 2024-12-16
+
+**feat: Anthropic SDK integration with Claude as default LLM**
+
+AnthropicProvider implements BaseLLMProvider. Uses claude-sonnet-4-6 by default. Configurable per agent.
