@@ -25,3 +25,9 @@ FastAPI app with /execute endpoint. Receives agent config and message, returns e
 **feat: Anthropic SDK integration with Claude as default LLM**
 
 AnthropicProvider implements BaseLLMProvider. Uses claude-sonnet-4-6 by default. Configurable per agent.
+
+### 2024-12-31
+
+**feat: LLM provider abstraction with generate stream count_tokens**
+
+BaseLLMProvider defines generate(), stream(), count_tokens() interface. Providers are swappable.
