@@ -31,3 +31,9 @@ AnthropicProvider implements BaseLLMProvider. Uses claude-sonnet-4-6 by default.
 **feat: LLM provider abstraction with generate stream count_tokens**
 
 BaseLLMProvider defines generate(), stream(), count_tokens() interface. Providers are swappable.
+
+### 2025-01-03
+
+**feat: agent builder with name system prompt model and temperature**
+
+Agent config stored in PostgreSQL. Includes name, system_prompt, model, temperature, max_steps.
