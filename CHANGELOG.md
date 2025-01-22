@@ -37,3 +37,9 @@ BaseLLMProvider defines generate(), stream(), count_tokens() interface. Provider
 **feat: agent builder with name system prompt model and temperature**
 
 Agent config stored in PostgreSQL. Includes name, system_prompt, model, temperature, max_steps.
+
+### 2025-01-22
+
+**feat: tool registry with JSON schema definitions per tool**
+
+Tools defined with name, description, input_schema (JSON Schema). Engine uses schema for LLM tool calling.
