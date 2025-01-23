@@ -43,3 +43,9 @@ Agent config stored in PostgreSQL. Includes name, system_prompt, model, temperat
 **feat: tool registry with JSON schema definitions per tool**
 
 Tools defined with name, description, input_schema (JSON Schema). Engine uses schema for LLM tool calling.
+
+### 2025-01-23
+
+**feat: per-agent tool permission allowlist checked before invocation**
+
+AgentTool join table lists permitted tools per agent. Engine validates before every tool call.
