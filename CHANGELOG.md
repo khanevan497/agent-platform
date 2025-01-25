@@ -49,3 +49,9 @@ Tools defined with name, description, input_schema (JSON Schema). Engine uses sc
 **feat: per-agent tool permission allowlist checked before invocation**
 
 AgentTool join table lists permitted tools per agent. Engine validates before every tool call.
+
+### 2025-01-25
+
+**feat: bounded agent loop enforcing max_steps with graceful exit**
+
+Loop exits with graceful_stop reason after max_steps. Returns partial result with all steps so far.
