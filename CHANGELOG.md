@@ -55,3 +55,9 @@ AgentTool join table lists permitted tools per agent. Engine validates before ev
 **feat: bounded agent loop enforcing max_steps with graceful exit**
 
 Loop exits with graceful_stop reason after max_steps. Returns partial result with all steps so far.
+
+### 2025-02-02
+
+**feat: execution state machine pending running completed failed**
+
+Execution transitions: pending -> running -> completed/failed/cancelled. Stored in PostgreSQL.
