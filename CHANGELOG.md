@@ -61,3 +61,9 @@ Loop exits with graceful_stop reason after max_steps. Returns partial result wit
 **feat: execution state machine pending running completed failed**
 
 Execution transitions: pending -> running -> completed/failed/cancelled. Stored in PostgreSQL.
+
+### 2025-02-08
+
+**feat: full execution step tracing for LLM calls and tool calls**
+
+Every step logged: type (llm/tool), input, output, latency_ms, token counts. Accessible via API.
