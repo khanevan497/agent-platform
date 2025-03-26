@@ -67,3 +67,9 @@ Execution transitions: pending -> running -> completed/failed/cancelled. Stored 
 **feat: full execution step tracing for LLM calls and tool calls**
 
 Every step logged: type (llm/tool), input, output, latency_ms, token counts. Accessible via API.
+
+### 2025-03-26
+
+**feat: document ingestion pipeline supporting Markdown TXT and PDF**
+
+Documents chunked, embedded via Anthropic embeddings API, stored in pgvector.
