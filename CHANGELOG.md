@@ -73,3 +73,9 @@ Every step logged: type (llm/tool), input, output, latency_ms, token counts. Acc
 **feat: document ingestion pipeline supporting Markdown TXT and PDF**
 
 Documents chunked, embedded via Anthropic embeddings API, stored in pgvector.
+
+### 2025-04-16
+
+**feat: text chunking with configurable overlap for embedding**
+
+Chunks split at paragraph boundaries. Configurable chunk_size and overlap. Default 512/50 tokens.
