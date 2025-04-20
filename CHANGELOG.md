@@ -79,3 +79,9 @@ Documents chunked, embedded via Anthropic embeddings API, stored in pgvector.
 **feat: text chunking with configurable overlap for embedding**
 
 Chunks split at paragraph boundaries. Configurable chunk_size and overlap. Default 512/50 tokens.
+
+### 2025-04-20
+
+**feat: pgvector integration for storing and querying embeddings**
+
+vector(1536) column on documents table. KNN queries using cosine distance operator.
