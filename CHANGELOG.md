@@ -85,3 +85,9 @@ Chunks split at paragraph boundaries. Configurable chunk_size and overlap. Defau
 **feat: pgvector integration for storing and querying embeddings**
 
 vector(1536) column on documents table. KNN queries using cosine distance operator.
+
+### 2025-04-29
+
+**feat: hybrid semantic and keyword search with configurable top_k**
+
+Semantic search via pgvector plus keyword search via pg_trgm. Results merged with RRF scoring.
