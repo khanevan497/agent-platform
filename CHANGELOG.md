@@ -91,3 +91,9 @@ vector(1536) column on documents table. KNN queries using cosine distance operat
 **feat: hybrid semantic and keyword search with configurable top_k**
 
 Semantic search via pgvector plus keyword search via pg_trgm. Results merged with RRF scoring.
+
+### 2025-04-30
+
+**feat: human approval flow pausing execution on flagged tools**
+
+Tool with requires_approval=true creates ApprovalRequest. Engine polls until approved or rejected.
