@@ -97,3 +97,9 @@ Semantic search via pgvector plus keyword search via pg_trgm. Results merged wit
 **feat: human approval flow pausing execution on flagged tools**
 
 Tool with requires_approval=true creates ApprovalRequest. Engine polls until approved or rejected.
+
+### 2025-07-15
+
+**feat: WebSocket real-time execution step streaming**
+
+NestJS emits execution.step events to agent room. Playground page renders steps as they arrive.
