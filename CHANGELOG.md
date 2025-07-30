@@ -103,3 +103,9 @@ Tool with requires_approval=true creates ApprovalRequest. Engine polls until app
 **feat: WebSocket real-time execution step streaming**
 
 NestJS emits execution.step events to agent room. Playground page renders steps as they arrive.
+
+### 2025-07-30
+
+**feat: cost tracking for input output tokens and estimated USD**
+
+Token counts from Anthropic API response. USD cost computed from token counts and per-model pricing.
