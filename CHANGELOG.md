@@ -109,3 +109,9 @@ NestJS emits execution.step events to agent room. Playground page renders steps 
 **feat: cost tracking for input output tokens and estimated USD**
 
 Token counts from Anthropic API response. USD cost computed from token counts and per-model pricing.
+
+### 2025-08-01
+
+**feat: LLM-as-judge evaluation framework**
+
+Evaluator sends (question, expected, actual) to judge prompt. Judge returns pass/fail with reasoning.
