@@ -115,3 +115,9 @@ Token counts from Anthropic API response. USD cost computed from token counts an
 **feat: LLM-as-judge evaluation framework**
 
 Evaluator sends (question, expected, actual) to judge prompt. Judge returns pass/fail with reasoning.
+
+### 2025-08-13
+
+**feat: exact match scorer for evaluation cases**
+
+Normalizes strings (lowercase, strip whitespace) before comparison. Used for factual answer cases.
