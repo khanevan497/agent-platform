@@ -121,3 +121,9 @@ Evaluator sends (question, expected, actual) to judge prompt. Judge returns pass
 **feat: exact match scorer for evaluation cases**
 
 Normalizes strings (lowercase, strip whitespace) before comparison. Used for factual answer cases.
+
+### 2025-08-30
+
+**feat: evaluation dataset management with 50-case seed**
+
+Datasets have name and array of cases. Seed dataset has 50 customer support Q&A cases.
