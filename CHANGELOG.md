@@ -127,3 +127,9 @@ Normalizes strings (lowercase, strip whitespace) before comparison. Used for fac
 **feat: evaluation dataset management with 50-case seed**
 
 Datasets have name and array of cases. Seed dataset has 50 customer support Q&A cases.
+
+### 2025-09-04
+
+**feat: RBAC with Owner Admin Member Viewer roles**
+
+Owner can create agents. Admin can edit agents. Member can run agents. Viewer can read only.
