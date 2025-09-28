@@ -133,3 +133,9 @@ Datasets have name and array of cases. Seed dataset has 50 customer support Q&A 
 **feat: RBAC with Owner Admin Member Viewer roles**
 
 Owner can create agents. Admin can edit agents. Member can run agents. Viewer can read only.
+
+### 2025-09-28
+
+**feat: context compaction by summarizing older messages**
+
+When conversation exceeds context_limit tokens, older messages replaced with LLM-generated summary.
