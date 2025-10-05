@@ -139,3 +139,9 @@ Owner can create agents. Admin can edit agents. Member can run agents. Viewer ca
 **feat: context compaction by summarizing older messages**
 
 When conversation exceeds context_limit tokens, older messages replaced with LLM-generated summary.
+
+### 2025-10-05
+
+**feat: structured Pydantic output with one retry on validation failure**
+
+AgentStep validated against Pydantic model. One retry with error context if validation fails.
