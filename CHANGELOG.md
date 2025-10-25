@@ -145,3 +145,9 @@ When conversation exceeds context_limit tokens, older messages replaced with LLM
 **feat: structured Pydantic output with one retry on validation failure**
 
 AgentStep validated against Pydantic model. One retry with error context if validation fails.
+
+### 2025-10-25
+
+**feat: prompt injection defense labeling retrieved content as DATA**
+
+RAG results wrapped in data tags. System prompt instructs LLM to treat data as untrusted content.
