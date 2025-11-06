@@ -151,3 +151,9 @@ AgentStep validated against Pydantic model. One retry with error context if vali
 **feat: prompt injection defense labeling retrieved content as DATA**
 
 RAG results wrapped in data tags. System prompt instructs LLM to treat data as untrusted content.
+
+### 2025-11-06
+
+**feat: BullMQ queue for long-running agent executions**
+
+Executions queued via BullMQ. Processor calls Python engine via HTTP. WebSocket updates sent from processor.
