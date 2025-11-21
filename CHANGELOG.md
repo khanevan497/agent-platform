@@ -157,3 +157,9 @@ RAG results wrapped in data tags. System prompt instructs LLM to treat data as u
 **feat: BullMQ queue for long-running agent executions**
 
 Executions queued via BullMQ. Processor calls Python engine via HTTP. WebSocket updates sent from processor.
+
+### 2025-11-21
+
+**feat: agent playground page with live execution trace panel**
+
+Split pane: chat on left, execution trace timeline on right. Steps appear in real time via WebSocket.
