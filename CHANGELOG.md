@@ -163,3 +163,9 @@ Executions queued via BullMQ. Processor calls Python engine via HTTP. WebSocket 
 **feat: agent playground page with live execution trace panel**
 
 Split pane: chat on left, execution trace timeline on right. Steps appear in real time via WebSocket.
+
+### 2025-11-29
+
+**fix: resolve agent loop not terminating when max_steps reached**
+
+Loop was checking steps_taken > max_steps instead of >=. Off-by-one caused one extra LLM call.
