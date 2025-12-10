@@ -169,3 +169,9 @@ Split pane: chat on left, execution trace timeline on right. Steps appear in rea
 **fix: resolve agent loop not terminating when max_steps reached**
 
 Loop was checking steps_taken > max_steps instead of >=. Off-by-one caused one extra LLM call.
+
+### 2025-12-10
+
+**fix: fix pgvector cosine distance query returning wrong neighbors**
+
+Was using L2 distance operator instead of cosine distance. Fixed to use cosine for text embeddings.
