@@ -175,3 +175,9 @@ Loop was checking steps_taken > max_steps instead of >=. Off-by-one caused one e
 **fix: fix pgvector cosine distance query returning wrong neighbors**
 
 Was using L2 distance operator instead of cosine distance. Fixed to use cosine for text embeddings.
+
+### 2025-12-17
+
+**feat: execution cancel endpoint with graceful engine signal**
+
+POST /api/v1/executions/:id/cancel sets status to cancelling. Engine checks flag between steps.
