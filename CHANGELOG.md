@@ -181,3 +181,9 @@ Was using L2 distance operator instead of cosine distance. Fixed to use cosine f
 **feat: execution cancel endpoint with graceful engine signal**
 
 POST /api/v1/executions/:id/cancel sets status to cancelling. Engine checks flag between steps.
+
+### 2026-01-03
+
+**feat: execution metrics dashboard with success rate latency cost**
+
+Dashboard cards: total executions, success rate %, avg latency ms, total cost USD this month.
