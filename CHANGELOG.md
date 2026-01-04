@@ -187,3 +187,9 @@ POST /api/v1/executions/:id/cancel sets status to cancelling. Engine checks flag
 **feat: execution metrics dashboard with success rate latency cost**
 
 Dashboard cards: total executions, success rate %, avg latency ms, total cost USD this month.
+
+### 2026-01-04
+
+**feat: seed data with 3 agents 5 tools and 1 knowledge base**
+
+Seeds: Customer Support, Knowledge Assistant, Sales Assistant agents with tools and eval dataset.
