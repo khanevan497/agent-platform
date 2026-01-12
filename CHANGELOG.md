@@ -193,3 +193,9 @@ Dashboard cards: total executions, success rate %, avg latency ms, total cost US
 **feat: seed data with 3 agents 5 tools and 1 knowledge base**
 
 Seeds: Customer Support, Knowledge Assistant, Sales Assistant agents with tools and eval dataset.
+
+### 2026-01-12
+
+**fix: resolve tool timeout not propagating to Python engine**
+
+NestJS was passing timeout_seconds but engine was ignoring it. Added asyncio.wait_for with timeout.
