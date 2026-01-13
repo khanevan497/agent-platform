@@ -199,3 +199,9 @@ Seeds: Customer Support, Knowledge Assistant, Sales Assistant agents with tools 
 **fix: resolve tool timeout not propagating to Python engine**
 
 NestJS was passing timeout_seconds but engine was ignoring it. Added asyncio.wait_for with timeout.
+
+### 2026-01-13
+
+**feat: knowledge base document chunking progress indicator**
+
+Document upload shows progress bar. WebSocket events document.chunking and document.ready update UI.
