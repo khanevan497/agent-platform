@@ -205,3 +205,9 @@ NestJS was passing timeout_seconds but engine was ignoring it. Added asyncio.wai
 **feat: knowledge base document chunking progress indicator**
 
 Document upload shows progress bar. WebSocket events document.chunking and document.ready update UI.
+
+### 2026-02-06
+
+**perf: add pgvector HNSW index for faster embedding search**
+
+CREATE INDEX USING hnsw (embedding vector_cosine_ops) WITH (m=16, ef_construction=64). 5x faster KNN.
