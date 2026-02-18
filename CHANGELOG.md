@@ -211,3 +211,9 @@ Document upload shows progress bar. WebSocket events document.chunking and docum
 **perf: add pgvector HNSW index for faster embedding search**
 
 CREATE INDEX USING hnsw (embedding vector_cosine_ops) WITH (m=16, ef_construction=64). 5x faster KNN.
+
+### 2026-02-18
+
+**fix: fix approval timeout leaving execution in running state**
+
+ApprovalRequest expiry now transitions execution to failed with timeout reason.
