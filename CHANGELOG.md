@@ -217,3 +217,9 @@ CREATE INDEX USING hnsw (embedding vector_cosine_ops) WITH (m=16, ef_constructio
 **fix: fix approval timeout leaving execution in running state**
 
 ApprovalRequest expiry now transitions execution to failed with timeout reason.
+
+### 2026-03-19
+
+**refactor: extract tool executor to dedicated Python module**
+
+tools/executor.py handles tool dispatch, validation, timeout, and error normalization.
