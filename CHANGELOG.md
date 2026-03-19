@@ -223,3 +223,9 @@ ApprovalRequest expiry now transitions execution to failed with timeout reason.
 **refactor: extract tool executor to dedicated Python module**
 
 tools/executor.py handles tool dispatch, validation, timeout, and error normalization.
+
+### 2026-03-19
+
+**feat: token count estimation shown before starting execution**
+
+POST /api/v1/agents/:id/estimate returns estimated tokens and cost before execution starts.
