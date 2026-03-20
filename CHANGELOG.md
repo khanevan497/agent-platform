@@ -229,3 +229,9 @@ tools/executor.py handles tool dispatch, validation, timeout, and error normaliz
 **feat: token count estimation shown before starting execution**
 
 POST /api/v1/agents/:id/estimate returns estimated tokens and cost before execution starts.
+
+### 2026-03-20
+
+**fix: resolve concurrent execution lock contention on agent**
+
+Two concurrent executions for same agent were deadlocking. Added per-agent Redis lock with TTL.
