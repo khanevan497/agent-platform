@@ -235,3 +235,9 @@ POST /api/v1/agents/:id/estimate returns estimated tokens and cost before execut
 **fix: resolve concurrent execution lock contention on agent**
 
 Two concurrent executions for same agent were deadlocking. Added per-agent Redis lock with TTL.
+
+### 2026-04-19
+
+**docs: document security principles and prompt injection defense**
+
+README section: LLM as decision component not security boundary. Tool auth in NestJS not in LLM.
