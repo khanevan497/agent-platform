@@ -241,3 +241,9 @@ Two concurrent executions for same agent were deadlocking. Added per-agent Redis
 **docs: document security principles and prompt injection defense**
 
 README section: LLM as decision component not security boundary. Tool auth in NestJS not in LLM.
+
+### 2026-05-08
+
+**feat: agent version history with config diff view**
+
+AgentVersion records saved on every config change. Version history page shows diff between versions.
