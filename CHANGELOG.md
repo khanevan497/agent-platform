@@ -247,3 +247,9 @@ README section: LLM as decision component not security boundary. Tool auth in Ne
 **feat: agent version history with config diff view**
 
 AgentVersion records saved on every config change. Version history page shows diff between versions.
+
+### 2026-05-10
+
+**chore: Docker Compose with pgvector extension provisioning**
+
+Postgres init script runs CREATE EXTENSION IF NOT EXISTS vector. pgvector 0.7 installed in image.
