@@ -253,3 +253,9 @@ AgentVersion records saved on every config change. Version history page shows di
 **chore: Docker Compose with pgvector extension provisioning**
 
 Postgres init script runs CREATE EXTENSION IF NOT EXISTS vector. pgvector 0.7 installed in image.
+
+### 2026-05-17
+
+**fix: fix WebSocket auth failing on JWT token refresh**
+
+Socket reconnects after token refresh now re-authenticate with new token before joining rooms.
