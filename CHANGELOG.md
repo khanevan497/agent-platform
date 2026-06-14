@@ -259,3 +259,9 @@ Postgres init script runs CREATE EXTENSION IF NOT EXISTS vector. pgvector 0.7 in
 **fix: fix WebSocket auth failing on JWT token refresh**
 
 Socket reconnects after token refresh now re-authenticate with new token before joining rooms.
+
+### 2026-06-14
+
+**feat: evaluation pass rate trend chart per dataset**
+
+Line chart showing pass rate per eval run over time. Helps track whether agent improvements hold.
