@@ -271,3 +271,9 @@ Line chart showing pass rate per eval run over time. Helps track whether agent i
 **perf: batch embedding generation for large document uploads**
 
 Documents chunked in batches of 100. Anthropic embeddings API called once per batch, not per chunk.
+
+### 2026-08-06
+
+**feat: per-agent model selection supporting multiple LLM providers**
+
+Agent config includes provider field. Engine resolves AnthropicProvider or future OpenAI provider.
