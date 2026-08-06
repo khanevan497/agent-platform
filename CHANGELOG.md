@@ -265,3 +265,9 @@ Socket reconnects after token refresh now re-authenticate with new token before 
 **feat: evaluation pass rate trend chart per dataset**
 
 Line chart showing pass rate per eval run over time. Helps track whether agent improvements hold.
+
+### 2026-08-06
+
+**perf: batch embedding generation for large document uploads**
+
+Documents chunked in batches of 100. Anthropic embeddings API called once per batch, not per chunk.
