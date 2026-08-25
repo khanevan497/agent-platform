@@ -277,3 +277,9 @@ Documents chunked in batches of 100. Anthropic embeddings API called once per ba
 **feat: per-agent model selection supporting multiple LLM providers**
 
 Agent config includes provider field. Engine resolves AnthropicProvider or future OpenAI provider.
+
+### 2026-08-25
+
+**fix: fix RAG context overflow when documents exceed token limit**
+
+Retrieved chunks now trimmed to fit within context_limit. Excess chunks dropped with warning in trace.
