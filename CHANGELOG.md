@@ -283,3 +283,9 @@ Agent config includes provider field. Engine resolves AnthropicProvider or futur
 **fix: fix RAG context overflow when documents exceed token limit**
 
 Retrieved chunks now trimmed to fit within context_limit. Excess chunks dropped with warning in trace.
+
+### 2026-09-04
+
+**chore: add rate limiting on execution creation endpoints**
+
+Redis-backed rate limit: 10 executions per minute per organization. Returns 429 with retry-after.
