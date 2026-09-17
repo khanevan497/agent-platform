@@ -289,3 +289,9 @@ Retrieved chunks now trimmed to fit within context_limit. Excess chunks dropped 
 **chore: add rate limiting on execution creation endpoints**
 
 Redis-backed rate limit: 10 executions per minute per organization. Returns 429 with retry-after.
+
+### 2026-09-17
+
+**release: v1.0.0 stable AI agent platform**
+
+First stable release. Agent builder, tool registry, RAG, human approval, tracing, evaluation all complete.
