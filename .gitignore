@@ -1,0 +1,17 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.DS_Store
+.claude/
+CLAUDE.md
+AGENTS.md
+skills-lock.json

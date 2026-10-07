@@ -1,0 +1,15 @@
+{
+  "name": "agent-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "docker compose up --build",
+    "dev:api": "cd apps/api && npm run start:dev",
+    "dev:web": "cd apps/web && npm run dev",
+    "install:all": "npm install && cd apps/agent-engine && pip install -r requirements.txt"
+  }
+}
